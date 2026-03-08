@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ARM vs x86</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/cpu.png" />
+  </head>
+  <body>
+    <header id="topbar">
+      <a href="index.html" class="logo">DE<span>CPU</span></a>
+      <nav>
+        <a href="verantwoording.html">Verantwoording</a>
+        <a href="overons.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button
+        class="hamburger"
+        onclick="this.previousElementSibling.classList.toggle('open')"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="page-wrap">
+      <aside>
+        <div class="side-box">
+          <div class="side-box-title">Inhoudsopgave</div>
+          <ul>
+            <li>
+              <a href="functie.html"
+                ><span class="num">01</span>Functie van een CPU</a
+              >
+            </li>
+            <li>
+              <a href="werking.html"
+                ><span class="num">02</span>Hoe werkt een CPU?</a
+              >
+            </li>
+            <li>
+              <a href="generaties.html"
+                ><span class="num">03</span>Generaties &amp; Cores</a
+              >
+            </li>
+            <li>
+              <a href="moore.html"><span class="num">04</span>Moore's Law</a>
+            </li>
+            <li>
+              <a href="asml.html"
+                ><span class="num">05</span>ASML &amp; Printplaten</a
+              >
+            </li>
+            <li class="active">
+              <a href="arm.html"><span class="num">06</span>ARM vs x86</a>
+            </li>
+            <li>
+              <a href="toekomst.html"
+                ><span class="num">07</span>Toekomst van CPU's</a
+              >
+            </li>
+            <li>
+              <a href="ai.html"><span class="num">08</span>CPU's &amp; AI</a>
+            </li>
+          </ul>
+        </div>
+        <div class="side-box">
+          <div class="side-box-title">Navigatie</div>
+          <ul>
+            <li>
+              <a href="asml.html"><span class="num">←</span>Vorige: ASML</a>
+            </li>
+            <li>
+              <a href="toekomst.html"
+                ><span class="num">→</span>Volgende: Toekomst</a
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <main>
+        <div class="section-card" id="arm">
+          <div class="section-header">
+            <h2>Verschil tussen een ARM en x86 CPU</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              ARM en x86 CPU's zijn twee verschillende soorten processors die
+              computers gebruiken om taken uit te voeren. Het belangrijkste
+              verschil tussen ARM en x86 CPU's zit in de manier waarop ze zijn
+              opgebouwd en hoe ze met energie omgaan. ARM-processors werken op
+              een makkelijke manier van rekenen. Ze gebruiken simpele opdrachten
+              die niet veel stroom nodig hebben. Hierdoor worden ARM-processors
+              niet snel warm en kunnen ze lang werken op een accu. Dit is de
+              reden dat ARM-processors veel worden gebruikt in ARM-gebaseerde
+              apparaten zoals smartphones, tablets en steeds vaker in laptops.
+            </p>
+            <p>
+              X86-processors werken op een andere manier. Ze gebruiken
+              ingewikkelde opdrachten die verschillende taken tegelijk kunnen
+              uitvoeren. Dit kan ervoor zorgen dat ze erg snel zijn, maar het
+              kost ook meer energie. Vooral oude x86-CPU's, zoals oude Intel of
+              AMD-processors, gebruiken veel stroom en worden snel warm. Daarom
+              hebben deze processors vaak een ventilator nodig om ze af te
+              koelen en gaat de accu van een laptop sneller leeg.
+            </p>
+            <p>
+              Als we kijken naar hoe efficiënt iets is dan zijn moderne
+              ARM-CPU's echt beter. Ze geven goede prestaties en gebruiken
+              weinig energie. Hierdoor kunnen apparaten langer gebruikt worden
+              zonder op te laden en blijven ze stil, omdat er weinig koeling
+              nodig is. Oudere x86-CPU's kunnen soms sneller zijn bij korte,
+              zware taken, maar als je ze lang gebruikt, gebruiken ze veel
+              stroom en worden ze heet. Dit kan ervoor zorgen dat de processor
+              langzamer gaat werken om niet te heet te worden.
+            </p>
+            <p>
+              Er is ook een verschil in software. De x86-architectuur bestaat al
+              heel lang en bijna alle computerprogramma's zijn voor deze
+              architectuur gemaakt. Daardoor werkt vrijwel alles meteen zonder
+              problemen. De ARM-architectuur had vroeger minder ondersteuning,
+              maar dat is sterk verbeterd. Tegenwoordig werken veel
+              computerprogramma's ook op ARM-systemen, al moeten sommige oudere
+              x86-programma's worden omgezet of nagebootst.
+            </p>
+
+            <table class="cmp-table">
+              <thead>
+                <tr>
+                  <th>Eigenschap</th>
+                  <th>
+                    ARM
+                    <span style="font-weight: 400; opacity: 0.8"
+                      >(bijv. Apple M-serie)</span
+                    >
+                  </th>
+                  <th>
+                    x86
+                    <span style="font-weight: 400; opacity: 0.8"
+                      >(bijv. Intel/AMD)</span
+                    >
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Opdrachten</td>
+                  <td><span class="tag">Simpel &amp; efficiënt</span></td>
+                  <td><span class="tag alt">Complex &amp; krachtig</span></td>
+                </tr>
+                <tr>
+                  <td>Energieverbruik</td>
+                  <td><span class="tag">Laag</span></td>
+                  <td><span class="tag alt">Hoger</span></td>
+                </tr>
+                <tr>
+                  <td>Warmteontwikkeling</td>
+                  <td><span class="tag">Weinig</span></td>
+                  <td><span class="tag alt">Meer koeling nodig</span></td>
+                </tr>
+                <tr>
+                  <td>Gebruik</td>
+                  <td>Smartphones, tablets, Apple laptops</td>
+                  <td>Desktop-pc's, servers, gaming</td>
+                </tr>
+                <tr>
+                  <td>Software-ondersteuning</td>
+                  <td>Groeiende ondersteuning</td>
+                  <td><span class="tag alt">Jarenlange legacy</span></td>
+                </tr>
+                <tr>
+                  <td>Accuduur (laptop)</td>
+                  <td><span class="tag">Uitstekend</span></td>
+                  <td><span class="tag alt">Korter</span></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      Gemaakt voor het vak <strong>Informatica</strong> &nbsp;|&nbsp; Gemaakt
+      door: <strong>Tim, Sjors en Filip</strong>
+    </footer>
+  </body>
+</html>

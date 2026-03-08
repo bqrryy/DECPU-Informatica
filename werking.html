@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Werking van een CPU</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="images/cpu.png" />
+  </head>
+  <body>
+    <header id="topbar">
+      <a href="index.html" class="logo">DE<span>CPU</span></a>
+      <nav>
+        <a href="verantwoording.html">Verantwoording</a>
+        <a href="overons.html">Over Ons</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button
+        class="hamburger"
+        onclick="this.previousElementSibling.classList.toggle('open')"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+
+    <div class="page-wrap">
+      <aside>
+        <div class="side-box">
+          <div class="side-box-title">Inhoudsopgave</div>
+          <ul>
+            <li>
+              <a href="functie.html"
+                ><span class="num">01</span>Functie van een CPU</a
+              >
+            </li>
+            <li class="active">
+              <a href="werking.html"
+                ><span class="num">02</span>Hoe werkt een CPU?</a
+              >
+            </li>
+            <li>
+              <a href="generaties.html"
+                ><span class="num">03</span>Generaties &amp; Cores</a
+              >
+            </li>
+            <li>
+              <a href="moore.html"><span class="num">04</span>Moore's Law</a>
+            </li>
+            <li>
+              <a href="asml.html"
+                ><span class="num">05</span>ASML &amp; Printplaten</a
+              >
+            </li>
+            <li>
+              <a href="arm.html"><span class="num">06</span>ARM vs x86</a>
+            </li>
+            <li>
+              <a href="toekomst.html"
+                ><span class="num">07</span>Toekomst van CPU's</a
+              >
+            </li>
+            <li>
+              <a href="ai.html"><span class="num">08</span>CPU's &amp; AI</a>
+            </li>
+          </ul>
+        </div>
+        <div class="side-box">
+          <div class="side-box-title">Navigatie</div>
+          <ul>
+            <li>
+              <a href="functie.html"
+                ><span class="num">←</span>Vorige: Functie</a
+              >
+            </li>
+            <li>
+              <a href="generaties.html"
+                ><span class="num">→</span>Volgende: Generaties</a
+              >
+            </li>
+          </ul>
+        </div>
+      </aside>
+
+      <main>
+        <div class="section-card" id="werking">
+          <div class="section-header">
+            <h2>De Werking van een CPU</h2>
+          </div>
+          <div class="section-body">
+            <p>
+              Een CPU (Central Processing Unit) is het onderdeel van een
+              computer dat alle berekeningen uitvoert en opdrachten verwerkt. Je
+              kunt het zien als het brein van de computer. Alles wat je doet op
+              een laptop of pc, zoals typen, klikken of een programma openen,
+              wordt uiteindelijk door de CPU geregeld.
+            </p>
+            <p>
+              In een processor zitten miljarden transistoren. Dat zijn extreem
+              kleine elektronische schakelaars. Een transistor kan maar twee
+              toestanden hebben: hij laat stroom door of niet. In de computer
+              wordt dat weergegeven als 1 of 0. Zo'n 1 of 0 noemen we een bit.
+              Met één bit kun je bijna niets voorstellen, maar als je veel bits
+              combineert, kun je getallen en andere informatie opslaan. Groepen
+              bits worden opgeslagen in zogenaamde registers. Dat zijn kleine,
+              snelle geheugens in de processor zelf, waarin tijdelijk gegevens
+              worden bewaard tijdens berekeningen.
+            </p>
+            <p>
+              Vroeger werkten computers met 8-bits of 16-bits registers. Later
+              werden dat 32-bits systemen en tegenwoordig zijn 64-bits
+              processors de standaard. Een 64-bits register kan 2⁶⁴
+              verschillende waarden bevatten. Dat zijn meer dan 18 triljoen
+              mogelijkheden (ongeveer 1,8 × 10¹⁹). Hoe meer bits een processor
+              tegelijk kan verwerken, hoe grotere getallen en hoeveelheden
+              gegevens hij aankan.
+            </p>
+            <p>
+              De CPU werkt volgens een vast patroon. Hij haalt eerst een
+              opdracht uit het geheugen, daarna bepaalt hij wat die opdracht
+              betekent en vervolgens voert hij die uit. Dit proces herhaalt zich
+              voortdurend, miljarden keren per seconde. Moderne processors
+              kunnen ongeveer 3 tot 4 miljard bewerkingen per seconde uitvoeren.
+              Daardoor lijkt het alsof een computer meerdere dingen tegelijk
+              doet. In werkelijkheid voert de CPU-opdrachten heel snel achter
+              elkaar uit. Doordat dat zo snel gebeurt, merk je daar niets van.
+            </p>
+
+            <div class="highlight" style="margin-top: 16px">
+              <strong>Voorbeeld: Een toetsaanslag</strong><br />
+              Wanneer je bijvoorbeeld een letter typt op je toetsenbord, gebeurt
+              er meer dan je denkt. Onder elke toets zit een klein schakelaartje
+              dat een elektrisch signaal verstuurt zodra je drukt. Dat signaal
+              wordt door de computer ontvangen en de CPU bepaalt om welke toets
+              het gaat. Vervolgens wordt de juiste letter op het scherm
+              weergegeven. Als er ook spellingscontrole actief is, controleert
+              de computer ondertussen of het woord correct is. Dit hele proces
+              bestaat uit veel kleine stappen, maar omdat de processor zo snel
+              werkt, lijkt het alsof de letter direct verschijnt.
+            </div>
+
+            <p>
+              De eerste computers werkten nog niet met kleine transistoren zoals
+              nu, maar met grote glazen elektronenbuizen. Deze buizen waren
+              ongeveer zo groot als een kleine lamp en gebruikten veel stroom.
+              Oude radio's en televisies gebruikten dezelfde techniek en werden
+              daarom soms 'buizenbakken' genoemd. Vanaf de jaren vijftig werden
+              transistoren steeds kleiner en efficiënter gemaakt. Hierdoor
+              konden computers ook kleiner, sneller en zuiniger worden.
+            </p>
+            <p>
+              Het verschil in snelheid tussen vroeger en nu is enorm. Een
+              computer uit 1985 kon er ongeveer een uur over doen om een lijst
+              met 300 namen en adressen te sorteren. Tegenwoordig voert een
+              moderne computer dezelfde taak uit in milliseconde. Dat laat zien
+              hoe sterk de ontwikkeling van de CPU in relatief korte tijd is
+              geweest.
+            </p>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+      Gemaakt voor het vak <strong>Informatica</strong> &nbsp;|&nbsp; Gemaakt
+      door: <strong>Tim, Sjors en Filip</strong>
+    </footer>
+  </body>
+</html>
